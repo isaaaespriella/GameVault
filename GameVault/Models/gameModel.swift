@@ -1,7 +1,9 @@
-//
-//  gameModel.swift
-//  GameVault
-//
-//  Created by Isabel Espriella on 18/06/25.
-//
+import Foundation
 
+struct gameModel: Codable, Identifiable {
+    let id: ID
+    let title: String
+    let publisher: String
+    let description: String
+    let image: String
+}
